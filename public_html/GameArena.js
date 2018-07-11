@@ -1,3 +1,5 @@
+import Player from './Player.js';
+
 // create a graphic container to use as the main gamearena
 const GameArena={
 
@@ -17,7 +19,9 @@ canvas:document.createElement("canvas"),
 
     //context menthod to draw stuff
     this.context=this.canvas.getContext("2d");
-    player.draw();
+
+    //draw the player
+    //player.draw();
 
     nums=['3','3','2','2','1'];
     shiftShape=0;
